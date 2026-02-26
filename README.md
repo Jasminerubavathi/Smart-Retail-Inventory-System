@@ -33,10 +33,8 @@ Efficient product and inventory management
 
 By automating stock control and monitoring, the system reduces wastage, prevents stock shortages, and improves overall operational efficiency.
 
-
 🛠️ Technology Stack
-
-Frontend:
+🎨 Frontend
 
 HTML
 
@@ -44,18 +42,17 @@ CSS
 
 JSP
 
-Backend:
+⚙️ Backend
 
 Java (Servlet)
 
-Database:
+🗄️ Database
 
 MySQL
 
-Server:
+🌐 Server
 
 Apache Tomcat
-
 
 🚀 Core Features
 ✅ 1. Stock Management
