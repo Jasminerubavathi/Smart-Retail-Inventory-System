@@ -21,13 +21,13 @@ They lack,
 
 The Smart Retail Inventory Management System is a web-based application designed to help small and mid-sized retail stores manage their inventory efficiently and intelligently.
 
-The system provides:
+✅The system provides:
 
-Real-time stock monitoring
+✅Real-time stock monitoring
 
-Automated low-stock alerts
+✅Automated low-stock alerts
 
-FIFO-based stock rotation for perishable goods
+✅FIFO-based stock rotation for perishable goods
 
 Efficient product and inventory management
 
