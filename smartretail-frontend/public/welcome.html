@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Login Check</title>
+  <style>body{font-family:Arial; text-align:center; padding-top:80px;}</style>
+</head>
+<body>
+  <div id="result">Checking login...</div>
+
+  <script>
+    // Read query params
+    function getQueryParams() {
+      const params = {};
+      location.search.substring(1).split('&').forEach(pair => {
+        if(!pair) return;
+        const [k,v] = pair.split('=');
+        params[decodeURIComponent(k)] = decodeURIComponent(v || '');
+      });
+      return params;
+    }
+
+    const params = getQueryParams();
+    const user = params.username || '';
+    const pass = params.password || '';
+
+    // NOTE: Client-side demo authentication only.
+    // For a real app, implement server-side auth.
+    const validUsers = [ { u:'admin', p:'admin' } ];
+    const isValid = validUsers.some(x => x.u === user && x.p === pass);
+
+    const resultEl = document.getElementById('result');
+
+    if(isValid) {
+      // redirect to dashboard
+      resultEl.innerHTML = 'Login successful, redirecting...';
+      setTimeout(() => { location.href = 'dashboard.html'; }, 800);
+    } else {
+      resultEl.innerHTML = '<h1 style="color:#e74a3b;">Invalid Username or Password ❌</h1>' +
+        '<p><a href="index.html">Try Again</a></p>';
+    }
+  </script>
+</body>
+</html>
